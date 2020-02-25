@@ -1,0 +1,152 @@
+.modal-work {
+  display: flex;
+}
+
+.modal-work__previews {
+  position: relative;
+
+  width: 65%;
+
+  overflow: hidden;
+}
+
+.modal-work__previews-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__content {
+  position: relative;
+
+  width: 35%;
+  padding: 50px 99px 25px 26px;
+}
+
+.modal-work__title {
+  padding: 0;
+  margin: 0 0 10px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: @main-color;
+  text-transform: uppercase;
+}
+
+.modal-work__info {
+  padding: 0;
+  margin: 0 0 33px;
+
+  font-size: 18px;
+  line-height: 1.1;
+  color: @first-color;
+  text-transform: uppercase;
+}
+
+.modal-work__info-divider {
+  padding: 0 15px;
+}
+
+.modal-work__client {
+  padding: 0;
+  margin: 0 0 30px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: @main-color;
+}
+
+.modal-work__client-name {
+  display: block;
+  padding-top: 5px;
+
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: @first-color;
+}
+
+.modal-work__text-wrapper {
+  margin-bottom: 130px;
+}
+
+.modal-work__text {
+  padding: 0;
+  margin: 0 0 10px;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+  color: @first-color;
+}
+
+
+.modal-work__btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 27px 15px;
+  box-sizing: border-box;
+}
+
+.modal-work__btn {
+  padding: 0;
+
+  font-size: 14px;
+  color: @main-color;
+  text-transform: uppercase;
+  font-family: inherit;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    position: relative;
+
+    padding-left: 12px;
+
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      z-index: 1;
+
+      width: 10px;
+      height: 10px;
+
+      content: "";
+      background-image: url(../img/back.svg);
+    }
+  }
+
+  &--next {
+    position: relative;
+
+    padding-right: 12px;
+
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      z-index: 1;
+
+      width: 10px;
+      height: 10px;
+
+      content: "";
+      background-image: url(../img/next.svg);
+    }
+  }
+}

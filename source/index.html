@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Designer portfolio</title>
 </head>
-<body>
+<body class="no-scroll">
   <header class="header container">
     <div class="header__inner">
       <div class="header__user">
@@ -351,5 +351,198 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modals -->
+
+  <!-- Modal with img -->
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog">
+      <button class="modal__close" type="button">
+        <img src="img/close-modal.png" alt="Close">
+      </button>
+      <div class="modal-work">
+        <div class="modal-work__previews">
+          <img class="modal-work__previews-img" src="https://placehold.it/790x780" alt="">
+        </div>
+        <div class="modal-work__content">
+          <h3 class="modal-work__title">Project title</h3>
+          <p class="modal-work__info">category <span class="modal-work__info-divider">|</span> 20118</p>
+          <p class="modal-work__client">Client:<span class="modal-work__client-name">Creative Agency</span></p>
+          <div class="modal-work__text-wrapper">
+            <p class="modal-work__text">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Repudiandae quam odit, voluptatibus, consectetur
+              iure soluta assumenda dolor eius architecto nihil nobis sint eos ratione,
+              distinctio suscipit. Dicta impedit, velit sunt dolore dolorum ex tempora
+              odio saepe magni debitis illo accusamus.
+            </p>
+            <p class="modal-work__text">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Repudiandae quam odit, voluptatibus, consectetur
+              iure soluta assumenda dolor eius architecto nihil nobis sint eos ratione,
+              distinctio suscipit. Dicta impedit, velit sunt dolore dolorum ex tempora
+              odio saepe magni debitis illo accusamus.
+            </p>
+          </div>
+
+          <div class="modal-work__btn-wrapper">
+            <button class="modal-work__btn modal-work__btn--prev" type="button">Previous</button>
+            <button class="modal-work__btn modal-work__btn--next" type="button">Next</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal timeline -->
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog">
+      <button class="modal__close" type="button">
+        <img src="img/close-modal.png" alt="Close">
+      </button>
+      <div class="modal__content">
+        <h3 class="modal__title text-center">Resume</h3>
+        <div class="text-center modal__title-btn">
+          <a class="button button--mid" href="#">Download pdf</a>
+          <a class="button button--mid" href="#">Print</a>
+        </div>
+
+        <div class="timeline">
+          <ul class="timeline__list timeline__list--left">
+            <li class="timeline__item">
+              <h4 class="timeline__item-title">Experience</h4>
+              <time class="timeline__item-date" datetime="11-9-2018">2018 - <span class="timeline__item-year">Present</span></time>
+              <p class="timeline__item-subtitle">Freelancer</p>
+              <p class="timeline__item-position">Art Director</p>
+              <p class="timeline__item-desc">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui, quasi voluptate quaerat mollitia sunt eaque
+                fuga laboriosam aperiam rerum! Nostrum.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <time class="timeline__item-date" datetime="8-9-2019">2019 - 2020</time>
+              <p class="timeline__item-subtitle">The Best Agency</p>
+              <p class="timeline__item-position">Art Director</p>
+              <p class="timeline__item-desc">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui, quasi voluptate quaerat mollitia sunt eaque
+                fuga laboriosam aperiam rerum! Nostrum.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <time class="timeline__item-date" datetime="2-6-2019">2014 - 2016</time>
+              <p class="timeline__item-subtitle">Better Agency</p>
+              <p class="timeline__item-position">Senior UI/UX Designer</p>
+              <p class="timeline__item-desc">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui, quasi voluptate quaerat mollitia sunt eaque
+                fuga laboriosam aperiam rerum! Nostrum.
+              </p>
+            </li>
+          </ul>
+
+          <ul class="timeline__list timeline__list--right">
+            <li class="timeline__item">
+              <h4 class="timeline__item-title">Education</h4>
+              <time class="timeline__item-date" datetime="2-6-2019">2005 - 2010</time>
+              <p class="timeline__item-subtitle">UI/UX Design</p>
+              <p class="timeline__item-position">LA University, USA</p>
+            </li>
+            <li class="timeline__item">
+              <time class="timeline__item-date" datetime="2-6-2019">2002 - 2005</time>
+              <p class="timeline__item-subtitle">UI/UX Design</p>
+              <p class="timeline__item-position">LA Collage of Art, USA</p>
+            </li>
+            <!-- Progress bars -->
+            <li class="timeline__item">
+              <h4 class="timeline__item-title">Skills</h4>
+              <div class="progress-bar">
+                <div class="progress-bar__text">
+                  <p class="progress-bar__title">UI/UX Design</p>
+                </div>
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__progress" style="width: 75%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-bar__text">
+                  <p class="progress-bar__title">Illustrator</p>
+                </div>
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-bar__text">
+                  <p class="progress-bar__title">Photoshop</p>
+                </div>
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__progress" style="width: 70%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-bar__text">
+                  <p class="progress-bar__title">Sketch</p>
+                </div>
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__item">
+                    <div class="progress-bar__progress" style="width: 60%;"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <h4 class="timeline__item-title">Awards</h4>
+              <time class="timeline__item-date" datetime="2-6-2016">2016</time>
+              <p class="timeline__item-subtitle">The Best App Interface</p>
+              <p class="timeline__item-position">UI/UX Magazine</p>
+              <p class="timeline__item-desc">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui, quasi voluptate quaerat mollitia sunt eaque
+                fuga laboriosam aperiam rerum! Nostrum.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center">
+          <a class="button" href="#">hire me</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal">
+    <div class="modal__dialog modal__dialog--sm">
+      <button class="modal__close" type="button">
+        <img src="img/close-modal.png" alt="Close">
+      </button>
+        <div class="contact">
+          <div class="contact__left">
+            <h3 class="contact__title">Let's talk!</h3>
+            <p class="contact__subtitle">Call me or send me a request</p>
+            <ul class="contact__info">
+              <li class="contact__info-item">
+                <a class="contact__info-link contact__info-link--tel" href="tel:+74951111111">+7 (495) 111-11-11</a>
+              </li>
+              <li class="contact__info-item">
+                <a class="contact__info-link contact__info-link--mail" href="mailto:example@gmail.com">example@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__right"></div>
+        </div>
+    </div>
+  </div>
+
 </body>
 </html>

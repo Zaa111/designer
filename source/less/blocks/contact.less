@@ -1,0 +1,82 @@
+.contact {
+  display: flex;
+}
+
+.contact__left {
+  width: 47%;
+  padding: 30px;
+}
+
+.contact__title {
+  padding: 0;
+  margin: 0 0 10px;
+
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: @main-color;
+  text-transform: uppercase;
+}
+
+.contact__subtitle {
+  padding: 0;
+  margin: 0 0 45px;
+
+  text-transform: uppercase;
+}
+
+.contact__info {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.contact__info-item {
+  margin-bottom: 15px;
+}
+
+.contact__info-link {
+  position: relative;
+
+  padding-left: 30px;
+
+  color: @main-color;
+
+  &--tel {
+    &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 20px;
+    height: 20px;
+
+    content: "";
+    background: url(../img/call.svg) center no-repeat;
+    }
+  }
+
+  &--mail {
+    &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 20px;
+    height: 20px;
+
+    content: "";
+    background: url(../img/mail.svg) center no-repeat;
+    }
+  }
+}
+
+.contact__right {
+  width: 53%;
+
+  background: @main-color url(https://placehold.it/480x700)
+  center no-repeat;
+}
