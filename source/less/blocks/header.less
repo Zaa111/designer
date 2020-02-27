@@ -58,12 +58,12 @@
 .header__nav-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
   height: 100%;
   padding: 0;
   margin: 0;
 
-  flex-wrap: wrap;
-  text-align: center;
 
   list-style: none;
 
@@ -94,9 +94,11 @@
     margin-right: 0;
   }
 
-  @media @mobile-sm {
-    margin-right: 0;
+  @media @mobile {
+    display: block;
     width: 100%;
+    padding: 7px 15px;
+    margin-right: 0;
   }
 }
 
@@ -146,11 +148,11 @@
     }
   }
 
-  @media @mobile-sm {
+  @media @mobile {
     display: block;
     box-sizing: border-box;
     width: 100%;
     margin-left: 0;
-    padding: 7px 15px;
+    padding: 0;
   }
 }
