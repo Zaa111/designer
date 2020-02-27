@@ -5,15 +5,22 @@
   margin: 0;
 
   list-style: none;
+
+
 }
 
 .articles__item {
-  width: 31%;
-  margin-bottom: 40px;
-  margin-right: 40px;
+  box-sizing: border-box;
+  flex-basis: 33.33%;
+  padding: 15px;
+  padding-bottom: 30px;
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+
+  @media @tablet {
+    flex-basis: 100%;
   }
 }
 
@@ -34,8 +41,10 @@
   justify-content: center;
   width: 77px;
   height: 77px;
+  padding: 0;
+  margin: 0;
 
-  font-style: 16px;
+  font-size: 16px;
   line-height: 1.4;
   color: @fird-color;
   background-color: @main-color;
@@ -85,18 +94,4 @@
   font-weight: 300;
   line-height: 24px;
   color: @first-color;
-}
-
-.articles__footer {
-  text-align: right;
-
-}
-
-.articles__footer-link {
-  font-size: 14px;
-  color: @first-color;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
